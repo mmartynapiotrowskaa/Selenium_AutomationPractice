@@ -41,4 +41,4 @@ Project inspired by Selenium class in Software Development Academy, prepared bas
 The report plugin is taken from https://gitlab.com/monochromata-de/cucumber-reporting-plugin.
 
 ## Contact
-Created by mmartyna.piotrowskaa@gmail.com - feel free to contact me!
+Created by mmartyna.piotrowskaa@gmail.com - feel free to contact me.
