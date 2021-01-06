@@ -1,4 +1,4 @@
-# AutomationPractice_Selenium
+# Selenium_AutomationPractice
 > This is a project that provides main E2E tests performed on a website: http://automationpractice.com.
 
 ## Table of contents
