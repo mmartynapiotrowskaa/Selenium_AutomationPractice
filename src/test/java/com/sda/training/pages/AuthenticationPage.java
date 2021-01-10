@@ -73,5 +73,4 @@ public class AuthenticationPage extends BasePage{
         return alertMessage.getText();
     }
 
-
 }

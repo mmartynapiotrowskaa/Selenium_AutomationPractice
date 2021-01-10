@@ -1,7 +1,5 @@
 package com.sda.training;
 
-
-
 import io.cucumber.java.Scenario;
 import org.apache.commons.io.FileUtils;
 import org.openqa.selenium.OutputType;
@@ -11,8 +9,6 @@ import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.remote.RemoteWebDriver;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
-
-
 import java.io.File;
 import java.io.IOException;
 import java.nio.file.Paths;
@@ -35,7 +31,7 @@ public class DriverManager {
                 DRIVER = new FirefoxDriver();
                 break;
             default:
-                throw new IllegalStateException("Unsupported browser name!!!");
+                throw new IllegalStateException("Unsupported browser name!");
         }
         DRIVER.manage().window().maximize();
     }
@@ -62,7 +58,6 @@ public class DriverManager {
     }
 
     public static void processExecutedScenario(Scenario scenario) throws IOException {
-
         String status = (scenario.isFailed() ? "FAILED" : "SUCCESS");
         LOGGER.debug("======================= SCENARIO FINISHED WITH " + status + " STATUS =======================\n");
 

@@ -6,7 +6,6 @@ import io.cucumber.java.Before;
 import io.cucumber.java.Scenario;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
-
 import java.io.IOException;
 
 public class Hooks {
@@ -18,7 +17,6 @@ public class Hooks {
         LOGGER.debug("======================= BEFORE SCENARIO =======================\n");
         String scenarioName = scenario.getName();
         LOGGER.debug(scenarioName + "\n");
-
         DriverManager.startDriver();
     }
 
