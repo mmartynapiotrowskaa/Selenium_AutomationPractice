@@ -3,6 +3,8 @@ package com.sda.training.pages;
 import com.sda.training.DriverManager;
 import org.openqa.selenium.remote.RemoteWebDriver;
 import org.openqa.selenium.support.PageFactory;
+import org.openqa.selenium.support.ui.ExpectedCondition;
+import org.openqa.selenium.support.ui.WebDriverWait;
 
 public abstract class BasePage {
     public final RemoteWebDriver driver;
