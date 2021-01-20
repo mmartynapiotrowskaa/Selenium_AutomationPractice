@@ -8,7 +8,7 @@ import io.cucumber.java.en.When;
 
 import static org.hamcrest.MatcherAssert.assertThat;
 
-public class OrderingStepdefs {
+public class OrderingStepDefs {
 
     MyAccountPage myAccountPage = new MyAccountPage();
     HomePage homePage = new HomePage();
