@@ -85,6 +85,6 @@ public class AuthenticationStepdefs {
     @Then("Error message {string} is visible")
     public void errorMessageIsVisible(String expectedErrorMessage) {
         String visibleErrorMessage = authenticationPage.getLoginErrorMessage();
-        assertThat("Expected error message is: " + expectedErrorMessage + ", visble error message is: " + visibleErrorMessage, visibleErrorMessage.equals(expectedErrorMessage));
+assertEquals(assertionErrMessage, expectedErrorMessage, visibleErrorMessage);
     }
 }
