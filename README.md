@@ -29,8 +29,15 @@ List of tested features and scenarios included:
 
 ## Running
 The project is designed to support Google Chrome or Mozilla Firefox browsers. The first one is set by default.
+The drivers stored in this repository are good for Windows system. 
+If you would like to run the tests on Mac or Linux, please download the correct drivers from:
+ChromeDriver: https://chromedriver.chromium.org/downloads
+GeckoDriver: https://github.com/mozilla/geckodriver/releases/tag/v0.28.0
+and save them in drivers catalog.
+
 You can run a single feature or scenario but if you want to get the summary report you need to run TestRunner class.
 The report will be located in "target/cucumber/cucumber-html-reports".
+
 If the scenario finishes with failed status - the screenshot will be taken and saved in screenshots catalog.
 
 ## Status
