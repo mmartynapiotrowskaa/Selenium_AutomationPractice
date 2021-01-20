@@ -1,0 +1,5 @@
+/target
+screenshots/
+/.idea
+Selenium_AutomationPractice.iml
+debug.log
