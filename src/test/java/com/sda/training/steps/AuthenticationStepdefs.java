@@ -13,7 +13,7 @@ import java.util.List;
 
 import static org.hamcrest.MatcherAssert.assertThat;
 
-public class AuthenticationStepdefs {
+public class AuthenticationStepDefs {
 
     HomePage homePage = new HomePage();
     AuthenticationPage authenticationPage = new AuthenticationPage();
