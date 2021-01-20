@@ -4,7 +4,6 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.How;
 import org.openqa.selenium.support.ui.ExpectedConditions;
-import org.openqa.selenium.support.ui.WebDriverWait;
 
 public class AuthenticationPage extends BasePage{
 
@@ -33,16 +32,16 @@ public class AuthenticationPage extends BasePage{
     WebElement alertMessage;
 
     public void verifyIfAuthenticationPageIsOpened(){
-        new WebDriverWait(driver, 10).until(ExpectedConditions.visibilityOf(createAccountForm));
+        waitUntil(ExpectedConditions.visibilityOf(createAccountForm));
     }
 
     public void clickCreateAccountButton(){
-        new WebDriverWait(driver, 10).until(ExpectedConditions.visibilityOf(createAccountButton));
+        waitUntil(ExpectedConditions.visibilityOf(createAccountButton));
         createAccountButton.click();
     }
 
     public void waitForErrorMessage(){
-        new WebDriverWait(driver, 10).until(ExpectedConditions.visibilityOf(createAccountError));
+        waitUntil(ExpectedConditions.visibilityOf(createAccountError));
     }
 
     public String getErrorMessage(){
@@ -50,7 +49,7 @@ public class AuthenticationPage extends BasePage{
     }
 
     public void enterEmail(String email){
-        new WebDriverWait(driver, 10).until(ExpectedConditions.visibilityOf(emailField));
+        waitUntil(ExpectedConditions.visibilityOf(emailField));
         emailField.sendKeys(email);
     }
 
@@ -59,7 +58,7 @@ public class AuthenticationPage extends BasePage{
     }
 
     public void fillLoginEmailField(String email){
-        new WebDriverWait(driver, 10).until(ExpectedConditions.visibilityOf(loginEmailField));
+        waitUntil(ExpectedConditions.visibilityOf(loginEmailField));
         loginEmailField.clear();
         loginEmailField.sendKeys(email);
     }
